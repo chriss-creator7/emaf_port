@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elora Fangoo | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo">ELORA FANGOO</a>
+
+        <nav class="navbar">
+            <a href="#about">About</a>
+            <a href="#interests">Interests</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content reveal">
+                <p class="hero-subtitle">MODEL PORTFOLIO</p>
+                <h1>Elora Fangoo</h1>
+                <p class="hero-description">Independent Model · Mauritius</p>
+                <a href="#about" class="hero-button">Discover More</a>
+            </div>
+
+            <div class="hero-image">
+                <img src="img9.png" alt="Elora Fangoo">
+            </div>
+
+        </section>
+
+
+        <section class="about section" id="about">
+
+            <div class="about-image reveal">
+                <img src="img4.png" alt="Elora Fangoo portrait">
+            </div>
+
+            <div class="about-content reveal">
+                <p class="section-label">GET TO KNOW ME</p>
+                <h2>About Me</h2>
+
+                <p>
+                    I am an aspiring independent model with a strong passion for fashion,
+                    beauty and the modelling industry. Dedicated to developing my career,
+                    I am open to professional collaborations and creative opportunities
+                    that allow me to expand my portfolio, gain experience and continuously
+                    refine my skills.
+                </p>
+
+                <p>
+                    I enjoy expressing creativity through photography, fashion and
+                    different modelling styles.
+                </p>
+            </div>
+
+        </section>
+
+
+        <section class="gallery section">
+
+            <div class="section-heading reveal">
+                <p class="section-label">MY PORTFOLIO</p>
+                <h2>Through The Lens</h2>
+            </div>
+
+            <div class="gallery-container reveal">
+
+                <div class="gallery-track">
+                    <img src="img5.png" alt="Portfolio photograph">
+                    <img src="img6.png" alt="Portfolio photograph">
+                    <img src="img7.png" alt="Portfolio photograph">
+                    <img src="img8.png" alt="Portfolio photograph">
+
+                    <img src="img5.png" alt="Portfolio photograph">
+                    <img src="img6.png" alt="Portfolio photograph">
+                    <img src="img7.png" alt="Portfolio photograph">
+                    <img src="img8.png" alt="Portfolio photograph">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="interests section" id="interests">
+
+            <div class="section-heading reveal">
+                <p class="section-label">A LITTLE MORE ABOUT ME</p>
+                <h2>My Interests</h2>
+            </div>
+
+            <div class="interest-columns reveal">
+
+                <div class="interest-column">
+                    <h3>Modelling</h3>
+                    <p>Fashion Modelling</p>
+                    <p>Editorial Photography</p>
+                    <p>Beauty & Portrait Photography</p>
+                    <p>Creative Collaborations</p>
+                </div>
+
+                <div class="interest-column">
+                    <h3>Personal Interests</h3>
+                    <p>Fashion & Styling</p>
+                    <p>Photography</p>
+                    <p>Communication</p>
+                    <p>Creative Expression</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="contact section" id="contact">
+
+            <div class="contact-overlay"></div>
+
+            <div class="contact-content reveal">
+
+                <div class="contact-text">
+                    <p class="section-label">LET'S CONNECT</p>
+                    <h2>Get In Touch</h2>
+
+                    <p class="contact-description">
+                        Open to creative opportunities, professional collaborations
+                        and new experiences.
+                    </p>
+
+                    <div class="contact-links">
+
+                        <a href="https://www.instagram.com/4nushka_/" target="_blank" rel="noopener noreferrer">
+                            <img src="insta.png" alt="Instagram">
+                            <span>Instagram</span>
+                        </a>
+
+                        <a href="mailto:anushkafangoo@gmail.com">
+                            <img src="email.png" alt="Email">
+                            <span>Email</span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="contact-image">
+                    <img src="img11.png" alt="Elora Fangoo">
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 Elora Fangoo. All rights reserved.</p>
+    </footer>
+
+
+    <script>
+        const revealElements = document.querySelectorAll(".reveal");
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("active");
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.12
+        });
+
+        revealElements.forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+
+</body>
+</html>
